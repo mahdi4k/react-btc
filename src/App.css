@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: iransans;
+    src: url('./fonts/eot/IRANSansWeb.eot');
+    src: url('./fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/woff2/IRANSansWeb.woff2') format('woff2'),
+    url('./fonts/woff/IRANSansWeb.woff') format('woff'),
+    url('./fonts/ttf/IRANSansWeb.ttf') format('truetype');
+    font-weight: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: iransans;
+    src: url('./fonts/eot/IRANSansWeb_Bold.eot');
+    src: url('./fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),
+    url('./fonts/woff/IRANSansWeb_Bold.woff') format('woff'),
+    url('./fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+    font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: iransans_Medium;
+    src: url('./fonts/eot/IRANSansWeb_Medium.eot');
+    src: url('./fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),
+    url('./fonts/woff/IRANSansWeb_Medium.woff') format('woff'),
+    url('./fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+    font-weight: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: persianDigits;
+    src: url('./fonts/Farsi-Digits/Vazir-Medium-FD.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Farsi-Digits/Vazir-Medium-FD.woff2') format('woff2'),
+    url('./fonts/Farsi-Digits/Vazir-Medium-FD.woff') format('woff'),
+    url('./fonts/Farsi-Digits/Vazir-Medium-FD.ttf') format('truetype');
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+    outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+    font-family: iransans, serif !important;
+}
+
+/*burger accordion*/
+.bm-burger-button {
+    position: relative;
+    width: 36px;
+    height: 30px;
+    right: 0;
+    top: 0;
+}
+
+.dark-blue {
+    background-color: #1e2841 !important;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: #fdfdfd;
+    height: 13% !important;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    top: 55px;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #1e2841;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+    text-align: right;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.btn-sun-moon button {
+    height: 35px;
+}
+
+.btn-sun-moon-active {
+    background-color: #ffffff40;
+}
+
+@media (max-width: 560px) {
+    .sm-container-width {
+        max-width: 245px;
+    }
 }
