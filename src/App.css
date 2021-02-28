@@ -43,6 +43,7 @@
 
 body {
     font-family: iransans, serif !important;
+    background-image: url("./images/bg.jpg");
 }
 
 /*burger accordion*/
@@ -124,10 +125,80 @@ Note: Beware of modifying this element as it can break the animations - you shou
     height: 35px;
 }
 
-.btn-sun-moon-active {
-    background-color: #ffffff40;
+.btn-sunMoon-active {
+    background-color: #ffffff40 !important;;
 }
 
+/*
+signup-in page
+*/
+.controlled-tab-singInUp {
+    background-color: #28334E;
+}
+
+.controlled-tab-singInUp a {
+    width: 50%;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: #737F92;
+}
+
+.controlled-tab-singInUp a:hover {
+    color: #737F92 !important;
+}
+
+.form-bg-darkBlue {
+    background-color: #1E2841;
+    padding: 1.6rem !important;
+    text-align: right;
+}
+
+.form-bg-darkBlue .form-control {
+    background-color: transparent;
+    padding: 1.375rem 1.375rem;
+    border: 1px solid #999c9e;
+    text-align: right;
+}
+
+.form-bg-darkBlue .form-control:focus {
+    background-color: transparent !important;
+}
+
+.form-bg-darkBlue label {
+    color: #8c8c8c;
+    font-size: 14px;
+    position: relative;
+    cursor: text;
+    right: 18px;
+    top: 43px;
+    padding: 0 7px;
+    background: #1e2841;
+    transition: all .5s;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: white !important;
+    background-color: unset !important;
+    border-color: unset !important;
+    border-bottom: 1px solid #3C78E0 !important;
+}
+
+.nav-tabs {
+    border-bottom: unset !important;
+}
+.text-color{
+    color: #8c8c8c;
+}
+.text-color:hover{
+    color:#8c8c8c !important; ;
+}
+.nav-tabs .nav-link {
+    border: unset !important;
+}
+.custom-button-login{
+    background-color: #376AC6 !important;
+}
 @media (max-width: 560px) {
     .sm-container-width {
         max-width: 245px;
