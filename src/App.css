@@ -248,39 +248,83 @@ signup-in page
         max-width: 245px;
     }
 }
+
 .dark-text-color {
     color: #545b6f;
 }
+
 /*order Open*/
-.controlled-tab-BTC.orderOpenNav{
+#controlled-tab-tab-CancelAll {
+    margin-right: auto;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#controlled-tab-tab-CancelAll::after {
+    font-family: "Font Awesome 5 Pro", serif;
+    font-weight: 300;
+    content: "\f00d";
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+    font-size: 15pt;
+}
+
+.controlled-tab-BTC.orderOpenNav {
     direction: rtl;
 }
-.controlled-tab-BTC.orderOpenNav.nav-tabs{
-    border-bottom: 1px solid #717171  !important;
+
+.controlled-tab-BTC.orderOpenNav.nav-tabs {
+    border-bottom: 1px solid #717171 !important;
 }
-.controlled-tab-BTC.orderOpenNav a{
+
+.controlled-tab-BTC.orderOpenNav a {
     color: #5e7188;
     width: 9%;
     text-align: center;
     padding: 15px 0;
 }
-.orderOpen table{
+
+.orderOpen table {
     background-color: #1E2841;
     direction: rtl;
+    margin-bottom: 0;
 }
-.orderOpen .table-dark thead th , .orderOpen tr{
-    border-bottom:1px solid #545b6f ;
-    color: #545b6f;
+
+.orderOpen table i {
+    font-size: 15pt;
+}
+
+.orderOpen .table-dark thead th, .orderOpen tr {
+    border-bottom: 1px solid #545b6f;
+    color: #afb4c3;
     text-align: center;
 }
-.orderOpen .table-dark thead th{
+
+.orderOpen .table-dark thead th {
     font-size: 14px;
     text-align: center;
     padding: 20px 0;
 }
-.orderOpen .table-dark td{
+
+.orderOpen .table-dark td {
     padding: 30px 0;
 }
+
+.paginate-orderOpen {
+    background-color: #1E2841;
+    color: #454d55;
+}
+
+.paginate-orderOpen i {
+    font-size: 19pt;
+}
+
+.paginate-orderOpen span{
+    display: flex;
+    align-items: center;
+}
+
 footer {
     background-color: #1E2841;
     position: absolute;
