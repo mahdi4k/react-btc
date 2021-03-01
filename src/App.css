@@ -135,11 +135,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /*
 signup-in page
 */
-.controlled-tab-singInUp {
+.controlled-tab-BTC {
     background-color: #28334E;
 }
 
-.controlled-tab-singInUp a {
+.controlled-tab-BTC.singRegister a {
     width: 50%;
     text-align: center;
     padding-top: 18px;
@@ -147,7 +147,7 @@ signup-in page
     color: #737F92;
 }
 
-.controlled-tab-singInUp a:hover {
+.controlled-tab-BTC.singRegister a:hover {
     color: #737F92 !important;
 }
 
@@ -248,7 +248,39 @@ signup-in page
         max-width: 245px;
     }
 }
-
+.dark-text-color {
+    color: #545b6f;
+}
+/*order Open*/
+.controlled-tab-BTC.orderOpenNav{
+    direction: rtl;
+}
+.controlled-tab-BTC.orderOpenNav.nav-tabs{
+    border-bottom: 1px solid #717171  !important;
+}
+.controlled-tab-BTC.orderOpenNav a{
+    color: #5e7188;
+    width: 9%;
+    text-align: center;
+    padding: 15px 0;
+}
+.orderOpen table{
+    background-color: #1E2841;
+    direction: rtl;
+}
+.orderOpen .table-dark thead th , .orderOpen tr{
+    border-bottom:1px solid #545b6f ;
+    color: #545b6f;
+    text-align: center;
+}
+.orderOpen .table-dark thead th{
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0;
+}
+.orderOpen .table-dark td{
+    padding: 30px 0;
+}
 footer {
     background-color: #1E2841;
     position: absolute;

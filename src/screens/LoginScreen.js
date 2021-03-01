@@ -31,7 +31,7 @@ const LoginScreen = () => {
         <Container>
             <Col className='mx-auto my-5' md={6}>
                 <Tabs
-                    className='controlled-tab-singInUp '
+                    className='controlled-tab-BTC singRegister'
                     id="controlled-tab"
                     activeKey={key}
                     onSelect={(k) => setKey(k)}
