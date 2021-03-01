@@ -44,6 +44,9 @@
 body {
     font-family: iransans, serif !important;
     background-image: url("./images/bg.jpg");
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 2.5rem;
 }
 
 /*burger accordion*/
@@ -187,20 +190,74 @@ signup-in page
 .nav-tabs {
     border-bottom: unset !important;
 }
-.text-color{
+
+.text-color {
     color: #8c8c8c;
 }
-.text-color:hover{
-    color:#8c8c8c !important; ;
+
+.text-color:hover {
+    color: #8c8c8c !important;;
 }
+
 .nav-tabs .nav-link {
     border: unset !important;
 }
-.custom-button-login{
+
+.custom-button-login {
     background-color: #376AC6 !important;
 }
+
+.custom-button-register {
+    background-color: #243A66 !important;
+    border: 0 !important;
+}
+
+.strengthLength {
+    display: inline-flex;
+    transition: all .3s;
+    border-radius: 20px;
+}
+
+.custom-checkbox label {
+    position: relative;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.custom-control-label::before {
+    background-color: #1e2841 !important;
+    width: 1.3rem !important;
+    height: 1.3rem !important;
+    top: 0.015rem !important;
+}
+
+.custom-control-label::after {
+    width: 1.3rem !important;
+    height: 1.3rem !important;
+    top: 0.015rem !important;
+}
+
+#formBasicCheckbox {
+    background-color: #0b2e13;
+}
+
 @media (max-width: 560px) {
     .sm-container-width {
         max-width: 245px;
     }
+}
+
+footer {
+    background-color: #1E2841;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 2.5rem;
+}
+
+footer p {
+    margin-bottom: 0;
+    color: #b3adad;
 }
