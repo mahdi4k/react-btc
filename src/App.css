@@ -283,31 +283,32 @@ signup-in page
     width: 9%;
     text-align: center;
     padding: 15px 0;
+    white-space: nowrap;
 }
 
-.orderOpen table {
+.BTC-table table {
     background-color: #1E2841;
     direction: rtl;
     margin-bottom: 0;
 }
 
-.orderOpen table i {
+.BTC-table table i {
     font-size: 15pt;
 }
 
-.orderOpen .table-dark thead th, .orderOpen tr {
+.BTC-table .table-dark thead th, .BTC-table tr {
     border-bottom: 1px solid #545b6f;
     color: #afb4c3;
     text-align: center;
 }
 
-.orderOpen .table-dark thead th {
+.BTC-table .table-dark thead th {
     font-size: 14px;
     text-align: center;
     padding: 20px 0;
 }
 
-.orderOpen .table-dark td {
+.BTC-table .table-dark td {
     padding: 30px 0;
 }
 
@@ -323,8 +324,16 @@ signup-in page
 .paginate-orderOpen span{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
+/*tradeHistory*/
+.TradeHistory nav a {
+    margin-right: 35px;
+}
+.TradeHistory .controlled-tab-BTC.orderOpenNav a{
+    width: unset;
+}
 footer {
     background-color: #1E2841;
     position: absolute;

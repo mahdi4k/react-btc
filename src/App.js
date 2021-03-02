@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Deposit from "./screens/Deposit";
 import OrderOpen from "./screens/OrderOpen";
+import TradeHistory from "./screens/TradeHistory";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <Route path='/login' component={LoginScreen}/>
             <Route path='/deposit' component={Deposit}/>
             <Route path='/orderOpen' component={OrderOpen}/>
+            <Route path='/tradeHistory' component={TradeHistory}/>
             <Footer/>
         </Router>
 
