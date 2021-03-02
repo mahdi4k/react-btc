@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Col, Table, Tab, Tabs, Container} from "react-bootstrap";
 
-const TradeHistory = () => {
+const TradeHistoryScreen = () => {
     const [key, setKey] = useState('deposit')
 
 
@@ -181,4 +181,4 @@ const TradeHistory = () => {
     );
 };
 
-export default TradeHistory;
+export default TradeHistoryScreen;

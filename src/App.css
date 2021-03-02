@@ -314,7 +314,7 @@ signup-in page
 
 .paginate-orderOpen {
     background-color: #1E2841;
-    color: #454d55;
+    color: #657171;
 }
 
 .paginate-orderOpen i {
@@ -325,14 +325,72 @@ signup-in page
     display: flex;
     align-items: center;
     cursor: pointer;
-}
 
+}
+.estimatedValue {
+    background-color: #1E2841;
+    padding-bottom: 1.1rem;
+    padding-top: 1.1rem;
+
+}
+.estimatedValue h6{
+    color:#657171 ;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+.estimatedValue p {
+    color: white;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+.estimatedValue .badge-Currency{
+    font-size: 13pt;
+    color: white;
+    background-color: #3c78e0;
+    border-radius: 6px;
+    display: flex;
+    margin-left: 9px;
+    padding: 5px 5px 2px;
+    margin-right: 11px;
+}
 /*tradeHistory*/
 .TradeHistory nav a {
     margin-right: 35px;
 }
 .TradeHistory .controlled-tab-BTC.orderOpenNav a{
     width: unset;
+}
+/*Home screen*/
+.currency-left img{
+    width: 38px;
+    height: 38px;
+}
+.currency-left.active{
+    background-color: #383f5c;
+    border-left: 4px solid #3c78e0;
+}
+.currency-left {
+    background-color: #1e2841;
+}
+.currency-left .font-sm span{
+    font-size: 13px !important;
+}
+.currency-left h4, .currency-left span{
+    color: #657171;
+    margin-bottom: 0;
+    font-size: 19px;
+
+}
+.currency-left.active h4  , .currency-left.active span {
+    color: white;
+    font-size: 19px;
+}
+.currency-left .BTC-title{
+    width: 97px;
+}
+.currency-left .BTC-title p{
+    font-size: 16px;
+    margin-bottom: 0;
 }
 footer {
     background-color: #1E2841;

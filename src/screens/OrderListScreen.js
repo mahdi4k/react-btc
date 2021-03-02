@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Col, Container, Tab, Table, TabPane, Tabs} from "react-bootstrap";
 
-const OrderList = () => {
+const OrderListScreen = () => {
     const [key, setKey] = useState('open')
     const CancelAll = (e) => {
         console.log('clicked')
@@ -154,4 +154,4 @@ const OrderList = () => {
     );
 };
 
-export default OrderList;
+export default OrderListScreen;

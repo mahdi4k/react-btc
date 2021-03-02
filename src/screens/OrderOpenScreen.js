@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Col, Table, Tab, Tabs, Container, TabPane} from "react-bootstrap";
 
-const OrderOpen = () => {
+const OrderOpenScreen = () => {
     const [key, setKey] = useState('open')
     const CancelAll = (e) => {
         console.log('clicked')
@@ -169,4 +169,4 @@ const OrderOpen = () => {
     );
 };
 
-export default OrderOpen;
+export default OrderOpenScreen;
