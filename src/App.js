@@ -1,7 +1,7 @@
 import './App.css';
 import './all.min.css';
 import React from "react";
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route , Switch} from "react-router-dom";
 import LoginScreen from "./screens/LoginScreen";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -13,13 +13,15 @@ import HomeScreen from "./screens/HomeScreen";
 function App() {
     return (
 
-        <Router>
+        <Router basename="/fibodex">
             <Header/>
-            <Route path='/' component={HomeScreen}/>
-            <Route path='/login' component={LoginScreen}/>
-            <Route path='/orderOpen' component={OrderOpenScreen}/>
-            <Route path='/tradeHistory' component={TradeHistory}/>
-            <Route path='/orderList' component={OrderListScreen}/>
+                <Switch>
+                    <Route exact path='/' component={HomeScreen}/>
+                    <Route path='/login' component={LoginScreen}/>
+                    <Route path='/orderOpen' component={OrderOpenScreen}/>
+                    <Route path='/tradeHistory' component={TradeHistory}/>
+                    <Route path='/orderList' component={OrderListScreen}/>
+                </Switch>
             <Footer/>
         </Router>
 

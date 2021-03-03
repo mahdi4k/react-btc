@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState} from 'react';
 import {Navbar, Nav, ButtonGroup, Button} from "react-bootstrap";
 import {LinkContainer} from 'react-router-bootstrap'
 import Container from "react-bootstrap/Container";
 import {slide as Menu} from 'react-burger-menu'
 
 const Header = () => {
+
 
     return (
         <header>
@@ -21,11 +22,34 @@ const Header = () => {
                     </LinkContainer>
                     <Nav>
 
-                        <Menu width={280} right>
-                            <a id="home" className="menu-item" href="/">Home</a>
-                            <a id="about" className="menu-item" href="/about">About</a>
-                            <a id="contact" className="menu-item" href="/contact">Contact</a>
-                            <a className="menu-item--small" href="">Settings</a>
+                        <Menu  width={280} right>
+
+
+                            <LinkContainer to='/'>
+                                <a   id="home" className="menu-item" href="#">خانه</a>
+                            </LinkContainer>
+
+                            <LinkContainer to='/login'>
+                                <a id="about" className="menu-item" href="#">ورود/ثبت نام</a>
+                            </LinkContainer>
+
+
+                            <LinkContainer to='/orderOpen'>
+                                <a id="orderOpen" className="menu-item" href="#">سفارش های باز</a>
+                            </LinkContainer>
+
+                            <LinkContainer to='/tradeHistory'>
+
+                                <a id="tradeHistory" className="menu-item" href="#">تاریخچه تجارت</a>
+
+                            </LinkContainer>
+
+                            <LinkContainer to='/orderList'>
+
+                                <a id="orderList" className="menu-item" href="#">لیست سفارشات</a>
+
+                            </LinkContainer>
+
                         </Menu>
 
                     </Nav>

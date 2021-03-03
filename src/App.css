@@ -371,12 +371,13 @@ signup-in page
 }
 .currency-left {
     background-color: #1e2841;
+    border-bottom: 1px solid #5c606b;
 }
 .currency-left .font-sm span{
     font-size: 13px !important;
 }
 .currency-left h4, .currency-left span{
-    color: #657171;
+    color: #87939a;
     margin-bottom: 0;
     font-size: 19px;
 
@@ -392,7 +393,9 @@ signup-in page
     font-size: 16px;
     margin-bottom: 0;
 }
-
+.withdraw-bottom span ,.withdraw-bottom span p {
+    color: #87939a;
+}
 /*currency right*/
 .currency-right img{
     width: 58px;
@@ -434,7 +437,46 @@ signup-in page
     color: #737f92;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
-;
+
+}
+.depositHistory .table-dark td, .depositHistory .table-dark th, .depositHistory .table-dark thead th{
+    text-align: center;
+    color: #d0d0d0;
+}
+.depositHistory .table-dark th{
+    border-bottom: 1px solid #6b6a6a;
+    color: #b5b5b5;
+    font-size: 11pt;
+}
+.depositHistory table{
+    background-color: rgb(30, 40, 65);
+}
+.depositHistory h2{
+    color: white;
+}
+.estimatedValue .controlled-tab-BTC.orderOpenNav a{
+    margin-right: 10px;
+}
+.btc-home-nav a{
+    width: unset !important;
+    margin-right: 15px;
+}
+.withdraw-address form{
+    direction: rtl;
+}
+.withdraw-address .custom-select{
+    background: #2b354c;
+    border: 1px solid #2b354c;
+    color: white;
+}
+.withdraw-address label{
+    float: right;
+    color: white;
+}
+.withdraw-address .form-control{
+    background-color:rgb(30, 40, 65) ;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
 }
 footer {
     background-color: #1E2841;
