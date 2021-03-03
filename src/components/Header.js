@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React from 'react';
 import {Navbar, Nav, ButtonGroup, Button} from "react-bootstrap";
 import {LinkContainer} from 'react-router-bootstrap'
 import Container from "react-bootstrap/Container";
@@ -26,27 +26,30 @@ const Header = () => {
 
 
                             <LinkContainer to='/'>
-                                <a   id="home" className="menu-item" href="#">خانه</a>
+                                <Button className="menu-item text-right" variant="link">خانه</Button>
                             </LinkContainer>
 
                             <LinkContainer to='/login'>
-                                <a id="about" className="menu-item" href="#">ورود/ثبت نام</a>
+                                <Button className="menu-item text-right" variant="link">ورود/ثبت نام</Button>
                             </LinkContainer>
 
 
                             <LinkContainer to='/orderOpen'>
-                                <a id="orderOpen" className="menu-item" href="#">سفارش های باز</a>
+
+                                <Button className="menu-item text-right" variant="link">سفارش های باز</Button>
+
                             </LinkContainer>
 
                             <LinkContainer to='/tradeHistory'>
 
-                                <a id="tradeHistory" className="menu-item" href="#">تاریخچه تجارت</a>
+                                <Button className="menu-item text-right" variant="link">تاریخچه تجارت</Button>
+
 
                             </LinkContainer>
 
                             <LinkContainer to='/orderList'>
 
-                                <a id="orderList" className="menu-item" href="#">لیست سفارشات</a>
+                                 <Button className="menu-item text-right" variant="link">لیست سفارشات</Button>
 
                             </LinkContainer>
 

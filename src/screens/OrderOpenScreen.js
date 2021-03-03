@@ -9,7 +9,7 @@ const OrderOpenScreen = () => {
 
     return (
         <>
-            <Container className='BTC-table'>
+            <Container className='BTC-table w3-animate-opacity'>
                 <Col className='mx-auto my-5' md={12}>
                     <Tabs
                         className='controlled-tab-BTC orderOpenNav'
@@ -19,7 +19,7 @@ const OrderOpenScreen = () => {
                     >
                         <Tab eventKey="open" title="باز">
                             <div style={{background: '#1E2841'}} className='px-3'>
-                                <Table variant="dark" borderless>
+                                <Table responsive variant="dark" borderless>
                                     <thead>
                                     <tr>
                                         <th>تاریخ</th>

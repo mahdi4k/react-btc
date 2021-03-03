@@ -9,8 +9,8 @@ const OrderListScreen = () => {
 
     return (
         <div>
-            <Container className='BTC-table'>
-                <Col className='mx-auto my-5' md={12}>
+            <Container className='BTC-table w3-animate-opacity'>
+                <Col className='mx-auto my-5 ' md={12}>
                     <Tabs
                         className='controlled-tab-BTC orderOpenNav'
                         id="controlled-tab"
@@ -19,7 +19,7 @@ const OrderListScreen = () => {
                     >
                         <Tab eventKey="open" title="باز">
                             <div style={{background: '#1E2841'}} className='px-3'>
-                                <Table variant="dark" borderless>
+                                <Table responsive variant="dark" borderless>
                                     <thead>
                                     <tr>
                                         <th>تاریخ</th>
@@ -78,7 +78,7 @@ const OrderListScreen = () => {
                         </Tab>
                         <Tab eventKey="all" title="همه">
                             <div style={{background: '#1E2841'}} className='px-3'>
-                                <Table variant="dark" borderless>
+                                <Table responsive variant="dark" borderless>
                                     <thead>
                                     <tr>
                                         <th>تاریخ</th>
@@ -111,6 +111,7 @@ const OrderListScreen = () => {
                                         <td style={{color: '#B53A46'}}>sell limit</td>
                                         <td>ETH/BTC</td>
                                         <td>0.300000000</td>
+                                        <td>0.0000</td>
                                         <td>0.0000</td>
                                         <td>123.12323</td>
                                         <td>36.424244</td>

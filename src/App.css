@@ -57,7 +57,9 @@ body {
     right: 0;
     top: 0;
 }
-
+.btn.focus, .btn:focus{
+    box-shadow: unset !important;
+}
 .dark-blue {
     background-color: #1e2841 !important;
 }
@@ -243,11 +245,6 @@ signup-in page
     background-color: #0b2e13;
 }
 
-@media (max-width: 560px) {
-    .sm-container-width {
-        max-width: 245px;
-    }
-}
 
 .dark-text-color {
     color: #545b6f;
@@ -258,6 +255,7 @@ signup-in page
     margin-right: auto;
     cursor: pointer;
     margin-left: 20px;
+    width: unset;
 }
 
 #controlled-tab-tab-CancelAll::after {
@@ -489,4 +487,12 @@ footer {
 footer p {
     margin-bottom: 0;
     color: #b3adad;
+}
+@media (max-width: 560px) {
+    .sm-container-width {
+        max-width: 245px;
+    }
+    .BTC-table .table-dark thead th{
+        padding: 20px 35px;
+    }
 }

@@ -7,7 +7,7 @@ const TradeHistoryScreen = () => {
 
     return (
         <>
-            <Container className='TradeHistory BTC-table'>
+            <Container className='TradeHistory BTC-table w3-animate-opacity'>
                 <Col className='mx-auto my-5' md={12}>
                     <Tabs
                         className='controlled-tab-BTC orderOpenNav'
@@ -17,7 +17,7 @@ const TradeHistoryScreen = () => {
                     >
                         <Tab eventKey="deposit" title="تاریخچه سپرده">
                             <div style={{background: '#1E2841'}} className='px-3'>
-                                <Table variant="dark" borderless>
+                                <Table responsive variant="dark" borderless>
                                     <thead>
                                     <tr>
                                         <th>txID</th>
@@ -65,7 +65,7 @@ const TradeHistoryScreen = () => {
                         <Tab eventKey="trade" title="تاریخچه برداشت از حساب">
 
                             <div style={{background: '#1E2841'}} className='px-3'>
-                                <Table variant="dark" borderless>
+                                <Table responsive variant="dark" borderless>
                                     <thead>
                                     <tr>
 
@@ -117,7 +117,7 @@ const TradeHistoryScreen = () => {
                         <Tab eventKey="withdrawal" title="تاریخچه تجارت">
 
                             <div style={{background: '#1E2841'}} className='px-3'>
-                                <Table variant="dark" borderless>
+                                <Table responsive variant="dark" borderless>
                                     <thead>
                                     <tr>
                                         <th>تاریخ</th>

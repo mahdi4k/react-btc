@@ -3,6 +3,9 @@ import {Container, Row, Col, Image, Tab, Tabs, Table, Form , Button} from "react
 
 const HomeScreen = () => {
     const [key, setKey] = useState('deposit')
+    const [withdraw, setWthdraw] = useState('')
+    const [twoFa, settwoFa] = useState('')
+    const [withdrawAddress, setWithdrawAddress] = useState('')
     return (
         <>
             <div className='estimatedValue mt-3 w-100'>
@@ -18,10 +21,10 @@ const HomeScreen = () => {
                 </Container>
             </div>
             <Container>
-                <Row>
-                    <Col className='mt-3 pr-0' md={5}>
-                        <div className='d-flex justify-content-around align-items-center currency-left py-4 active'>
-                            <Image src="/images/Bitcoin-Cash-BCH-icon.png"/>
+                <Row className="w3-animate-opacity">
+                    <Col className='mt-3 pr-md-0' md={5}>
+                        <div className='d-flex flex-wrap justify-content-around align-items-center currency-left py-4 active'>
+                            <Image src="images/Bitcoin-Cash-BCH-icon.png"/>
                             <span className='BTC-title'>
                                     <h4>BCH</h4>
                                     <p className='BTC-title mt-1'>Bitcoin Cash</p>
@@ -33,7 +36,7 @@ const HomeScreen = () => {
                             </span>
                         </div>
                         <div className='d-flex justify-content-around align-items-center currency-left py-4  '>
-                            <Image src="/images/Bitcoin-BTC-icon.png"/>
+                            <Image src="images/Bitcoin-BTC-icon.png"/>
                             <span className='BTC-title'>
                                     <h4>BTC</h4>
                                     <p className='BTC-title mt-1'>Bitcoin</p>
@@ -46,7 +49,7 @@ const HomeScreen = () => {
                         </div>
 
                         <div className='d-flex justify-content-around align-items-center currency-left py-4'>
-                            <Image src="/images/Bitcoin-Cash-BCH-icon.png"/>
+                            <Image src="images/Bitcoin-Cash-BCH-icon.png"/>
                             <span className='BTC-title'>
                                     <h4>BCH</h4>
                                     <p className='BTC-title mt-1'>Bitcoin Cash</p>
@@ -58,7 +61,7 @@ const HomeScreen = () => {
                             </span>
                         </div>
                         <div className='d-flex justify-content-around align-items-center currency-left py-4  '>
-                            <Image src="/images/Bitcoin-BTC-icon.png"/>
+                            <Image src="images/Bitcoin-BTC-icon.png"/>
                             <span className='BTC-title'>
                                     <h4>BTC</h4>
                                     <p className='BTC-title mt-1'>Bitcoin</p>
@@ -71,7 +74,7 @@ const HomeScreen = () => {
                         </div>
                     </Col>
 
-                    <Col className='mt-3 pl-0' md={7}>
+                    <Col className='my-3 pl-md-0' md={7}>
                         <Tabs
                             className='controlled-tab-BTC orderOpenNav btc-home-nav'
                             id="controlled-tab"
@@ -84,9 +87,9 @@ const HomeScreen = () => {
                                     <div className='d-flex px-3  currency-right py-3 flex-column '>
 
                                         <div
-                                            className='d-flex w-100 justify-content-between header-description align-items-center'>
+                                            className='d-flex w-100 flex-wrap justify-content-between header-description align-items-center'>
                                             <div className='d-flex  header-description-left'>
-                                                <Image src="/images/Bitcoin-Cash-BCH-icon.png"/>
+                                                <Image src="images/Bitcoin-Cash-BCH-icon.png"/>
                                                 <span className='BTC-title ml-3'>
                                                 <h4>locked</h4>
                                                 <p className=' mt-1'>0.073123545</p>
@@ -105,7 +108,9 @@ const HomeScreen = () => {
                                         <div>
 
                                             <div className="input-group mb-3 py-4 currency-input-section">
-                                                <input value='ایجاد آدرس واریز' className="form-control"/>
+                                                <input  name="withdrawAddress"
+                                                        value={withdrawAddress}
+                                                        onChange={(e) => setWithdrawAddress(e.target.value)} className="form-control"/>
 
                                                 <div className="input-group-append">
                                                     <span className="input-group-text">کپی</span>
@@ -193,9 +198,9 @@ const HomeScreen = () => {
                                     <div className='d-flex px-3  currency-right py-3 flex-column '>
 
                                         <div
-                                            className='d-flex w-100 justify-content-between header-description align-items-center'>
+                                            className='d-flex w-100 flex-wrap justify-content-between header-description align-items-center'>
                                             <div className='d-flex  header-description-left'>
-                                                <Image src="/images/Bitcoin-Cash-BCH-icon.png"/>
+                                                <Image src="images/Bitcoin-Cash-BCH-icon.png"/>
                                                 <span className='BTC-title ml-3'>
                                                     <h4>locked</h4>
                                                     <p className=' mt-1'>0.073123545</p>
@@ -225,9 +230,9 @@ const HomeScreen = () => {
                                                         <Form.Control
                                                             type="text"
                                                             placeholder="مقدار برداشت"
-                                                            name="state"
-                                                            value=''
-                                                            onChange=''
+                                                            name="withdraw"
+                                                            value={withdraw}
+                                                            onChange={(e) => setWthdraw(e.target.value)}
 
                                                         />
 
@@ -237,9 +242,9 @@ const HomeScreen = () => {
                                                         <Form.Control
                                                             type="text"
                                                             placeholder="2FA code"
-                                                            name="zip"
-                                                            value=''
-                                                            onChange=''
+                                                            name="2FA"
+                                                            value={twoFa}
+                                                            onChange={(e)=>settwoFa(e.target.value)}
                                                         />
                                                     </Form.Group>
                                                 </Form.Row>

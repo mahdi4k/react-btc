@@ -13,7 +13,7 @@ import HomeScreen from "./screens/HomeScreen";
 function App() {
     return (
 
-        <Router basename="/fibodex">
+        <Router  >
             <Header/>
                 <Switch>
                     <Route exact path='/' component={HomeScreen}/>

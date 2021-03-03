@@ -29,7 +29,7 @@ const LoginScreen = () => {
 
     return (
         <Container>
-            <Col className='mx-auto my-5' md={6}>
+            <Col className='mx-auto w3-animate-opacity my-5' md={6}>
                 <Tabs
                     className='controlled-tab-BTC singRegister'
                     id="controlled-tab"
