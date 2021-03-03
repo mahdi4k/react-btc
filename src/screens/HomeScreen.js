@@ -1,7 +1,8 @@
-import React from 'react';
-import {Container, Row, Col, Image} from "react-bootstrap";
+import React, {useState} from 'react';
+import {Container, Row, Col, Image, Tab, Table, TabPane, Tabs} from "react-bootstrap";
 
 const HomeScreen = () => {
+    const [key, setKey] = useState('deposit')
     return (
         <>
             <div className='estimatedValue mt-3 w-100'>
@@ -18,7 +19,7 @@ const HomeScreen = () => {
             </div>
             <Container>
                 <Row>
-                    <Col className='mt-3' md={5}>
+                    <Col className='mt-3 pr-0' md={5}>
                         <div className='d-flex justify-content-around align-items-center currency-left py-3 active'>
                             <Image src="/images/Bitcoin-Cash-BCH-icon.png"/>
                             <span className='BTC-title'>
@@ -45,8 +46,66 @@ const HomeScreen = () => {
                         </div>
                     </Col>
 
-                    <Col md={7}>
+                    <Col className='mt-3 pl-0' md={7}>
+                        <Tabs
+                            className='controlled-tab-BTC orderOpenNav'
+                            id="controlled-tab"
+                            activeKey={key}
+                            onSelect={(k) => setKey(k)}
+                        >
+                            <Tab eventKey="deposit" title="سپرده">
+                                <div style={{background: '#1E2841'}} className='px-3'>
 
+                                    <div className='d-flex px-3  currency-right py-3 flex-column '>
+
+                                        <div
+                                            className='d-flex w-100 justify-content-between header-description align-items-center'>
+                                            <div className='d-flex  header-description-left'>
+                                                <Image src="/images/Bitcoin-Cash-BCH-icon.png"/>
+                                                <span className='BTC-title ml-3'>
+                                             <h4>locked</h4>
+                                             <p className=' mt-1'>0.073123545</p>
+                                            </span>
+                                            </div>
+                                            <div className='header-description-right'>
+                                                <h4>BCH Balance</h4>
+                                                <p>10.11977453</p>
+                                            </div>
+                                        </div>
+
+                                        <div className='BTC-Quoted col-12 col-md-7 p-0 mt-4'>
+                                            <p>Submit a desposit using the following address or Qr code . lorem lorem
+                                                lorem lorem lorem lorem lorem lorem lorem lorem </p>
+                                        </div>
+
+                                        <div>
+
+                                            <div className="input-group mb-3 currency-input-section">
+                                                <input value='ایجاد آدرس سپرده' className="form-control"/>
+
+                                                <div className="input-group-append">
+                                                    <span className="input-group-text">کپی</span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div className='depositHistory'>
+                                            
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </Tab>
+                            <Tab eventKey="withdraw" title="withdraw">
+                                <div style={{background: '#1E2841'}} className='px-3'>
+
+                                </div>
+                            </Tab>
+
+
+                        </Tabs>
                     </Col>
                 </Row>
             </Container>

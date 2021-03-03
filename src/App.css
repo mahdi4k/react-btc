@@ -392,6 +392,50 @@ signup-in page
     font-size: 16px;
     margin-bottom: 0;
 }
+
+/*currency right*/
+.currency-right img{
+    width: 58px;
+    height: 58px;
+}
+.currency-right .header-description-left h4 , .currency-right .header-description-right h4{
+    color:#657171 ;
+    font-size: 16pt;
+}
+.currency-right .header-description-left p , .currency-right .header-description-right p{
+    color:white;
+    font-size: 20pt;
+}
+.header-description{
+    border-bottom: 1px solid rgba(142, 142, 142, 0.55);
+}
+.currency-right .BTC-Quoted{
+    color:#737f92;
+    line-height: 35px;
+
+}
+.currency-input-section input {
+    background-color:#1e2841 ;
+    color: white;
+    text-align: right;
+}
+.form-control:focus{
+    background-color:#1e2841 !important;
+
+}
+.input-group-text{
+    cursor: pointer;
+}
+.currency-input-section .form-control:focus{
+    color: white !important;
+}
+.currency-input-section .input-group-text{
+    background-color: #243a66;
+    color: #737f92;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+;
+}
 footer {
     background-color: #1E2841;
     position: absolute;
