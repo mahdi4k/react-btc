@@ -10,14 +10,16 @@ import TradeHistory from "./screens/TradeHistoryScreen";
 import OrderListScreen from "./screens/OrderListScreen";
 import HomeScreen from "./screens/HomeScreen";
 import PanelHomeScreen from "./screens/Panel/PanelHomeScreen"
+import PanelFaqScreen from "./screens/Panel/PanelFaqScreen";
 function App() {
     return (
 
-        <Router  >
+        <Router>
             <Header/>
                 <Switch>
                     <Route exact path='/' component={HomeScreen}/>
                     <Route exact path='/panel' component={PanelHomeScreen}/>
+                    <Route exact path='/panel/faq' component={PanelFaqScreen}/>
                     <Route path='/login' component={LoginScreen}/>
                     <Route path='/orderOpen' component={OrderOpenScreen}/>
                     <Route path='/tradeHistory' component={TradeHistory}/>

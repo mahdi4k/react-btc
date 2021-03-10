@@ -1,8 +1,9 @@
 @import "./css/cryptofont";
-
+$panelMain : #343A40;
+$panelSecondary : #38424C;
 .homePanel {
   .bg-header {
-    background-color: #38424c;
+    background-color: $panelSecondary;
   }
 
   .dir-rtl {
@@ -33,7 +34,7 @@
       font-size: 13px;
     }
 
-    background-color: #343A40;
+    background-color: $panelMain;
 
     .recharts-surface {
       top: 0%;

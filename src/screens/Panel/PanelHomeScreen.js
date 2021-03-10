@@ -38,7 +38,7 @@ const PanelHomeScreen = () => {
                 <tr>
 
                     <td>
-                         <PanelAreaChart/>
+                        <PanelAreaChart/>
                     </td>
 
 
@@ -108,11 +108,11 @@ const PanelHomeScreen = () => {
 
                         <h6 className='text-right my-3'>کیف پول من</h6>
                     </div>
-                    <div className='Inventory-amount text-right' >
+                    <div className='Inventory-amount text-right'>
                         <div className='mr-3'>
                             <p className='pt-3 sm-text text-muted'>مقدار موجودی</p>
                             <h5 className='dir-rtl'>
-                                <span  >پیشنهاد های خرید :</span>
+                                <span>پیشنهاد های خرید :</span>
                                 <span>11.5003000</span>
                                 <span className='font-weight-light mr-1 sm-text text-monospace'>(BTC)</span>
                             </h5>
@@ -145,18 +145,19 @@ const PanelHomeScreen = () => {
                         <h6 className='text-right my-3'>وضعیت حساب کاربری</h6>
                     </div>
                     <ListGroup className='Account-status'>
-                        <ListGroup.Item  variant="dark">
+                        <ListGroup.Item variant="dark">
                             <div className='d-flex flex-md-nowrap text-right justify-content-end'>
                                 <a className='mr-2 text-danger' href="/#"> ارتقای عضویت</a>
                                 <p>سطح کاربری : سطح صفر - ادامه فرایند احراز هویت</p>
-                           </div>
+                            </div>
                         </ListGroup.Item>
-                        <ListGroup.Item variant="dark"><p>برداشت روزانه ریال:		0 از 0 تومان</p></ListGroup.Item>
+                        <ListGroup.Item variant="dark"><p>برداشت روزانه ریال: 0 از 0 تومان</p></ListGroup.Item>
                         <ListGroup.Item variant="dark"><p>برداشت روزانه رمزارز: 0 از 0 تومان</p></ListGroup.Item>
                         <ListGroup.Item variant="dark"><p>مجموع برداشت روزانه 0 از 0 تومان</p></ListGroup.Item>
                         <ListGroup.Item variant="dark"><p>مجموع برداشت ماهانه: 0 از 0 تومان</p></ListGroup.Item>
                         <ListGroup.Item variant="dark"><p>کارمزد معاملات: 0.35% (پله بعد 0.3%)</p></ListGroup.Item>
-                        <ListGroup.Item variant="dark"><p>ارزش معاملات سی روز: 0 تومان (پله بعد 10 میلیون تومان)</p></ListGroup.Item>
+                        <ListGroup.Item variant="dark"><p>ارزش معاملات سی روز: 0 تومان (پله بعد 10 میلیون تومان)</p>
+                        </ListGroup.Item>
                     </ListGroup>
                 </Col>
                 <Col md={6}>
