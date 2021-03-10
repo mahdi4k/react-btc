@@ -1,24 +1,63 @@
 @import "./css/cryptofont";
-.homePanel{
-  .bg-header{
+
+.homePanel {
+  .bg-header {
     background-color: #38424c;
   }
-  p{
-    margin: 0;
+
+  .dir-rtl {
+    direction: rtl;
   }
+
+  p {
+    margin: 0;
+    font-size:14px;
+  }
+
   color: white;
-  .header-top-currency-list{
-    i{
+
+  .header-top-currency-list {
+    i {
       margin: 0 .5rem 0 .5rem;
       font-size: 13px;
     }
   }
-  .header-top-currency-list-table{
-    tr{
-      th ,td{
+
+  .recharts-wrapper {
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .Inventory-amount {
+    .sm-text {
+      font-size: 13px;
+    }
+
+    background-color: #343A40;
+
+    .recharts-surface {
+      top: 0%;
+    }
+  }
+
+  .Account-status {
+    .list-group-item {
+      text-align: right;
+      border-radius: 0;
+    }
+  }
+
+  .header-top-currency-list-table {
+    tr {
+      th {
+        font-size: 13px;
+      }
+
+      th, td {
         text-align: center;
         vertical-align: middle;
-        i{
+
+        i {
           font-size: 18pt;
         }
       }
