@@ -9,7 +9,7 @@ import OrderOpenScreen from "./screens/OrderOpenScreen";
 import TradeHistory from "./screens/TradeHistoryScreen";
 import OrderListScreen from "./screens/OrderListScreen";
 import HomeScreen from "./screens/HomeScreen";
-
+import PanelHomeScreen from "./screens/Panel/PanelHomeScreen"
 function App() {
     return (
 
@@ -17,6 +17,7 @@ function App() {
             <Header/>
                 <Switch>
                     <Route exact path='/' component={HomeScreen}/>
+                    <Route exact path='/panel' component={PanelHomeScreen}/>
                     <Route path='/login' component={LoginScreen}/>
                     <Route path='/orderOpen' component={OrderOpenScreen}/>
                     <Route path='/tradeHistory' component={TradeHistory}/>

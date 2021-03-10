@@ -37,12 +37,13 @@
     font-weight: bold;
 }
 
+
 * {
     outline: none;
 }
 
 body {
-    font-family: iransans, serif !important;
+    font-family: persianDigits, serif !important;
     background-image: url("./images/bg.jpg");
     position: relative;
     min-height: 100vh;
