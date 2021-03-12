@@ -1,6 +1,7 @@
 @import "./css/cryptofont";
-$panelMain : #343A40;
-$panelSecondary : #38424C;
+
+$panelMain: #343A40;
+$panelSecondary: #38424C;
 .homePanel {
   .bg-header {
     background-color: $panelSecondary;
@@ -12,7 +13,7 @@ $panelSecondary : #38424C;
 
   p {
     margin: 0;
-    font-size:14px;
+    font-size: 14px;
   }
 
   color: white;
@@ -64,4 +65,28 @@ $panelSecondary : #38424C;
       }
     }
   }
+}
+
+.digital-page-group-buttons {
+  text-align: right;
+
+  button {
+    background: #E0A800;
+    margin-left: 20px;
+    border-radius: unset;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+  }
+
+}
+
+td.digital-page-group-buttons button {
+  background: #E0A800;
+  border-radius: unset;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
+  margin-left: unset;
+  width: 80%;
 }

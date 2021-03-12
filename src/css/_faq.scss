@@ -1,31 +1,46 @@
-$panelMain : #343A40;
-$panelSecondary : #38424C;
+$panelMain: #343A40;
+$panelSecondary: #38424C;
 
-.faqPanel{
-  h4{
+.faqPanel {
+  h4 {
     color: white;
   }
-  p{
+
+  p {
     margin: 0;
   }
-  .card{
-    .card-header{
+
+  .card {
+    .card-header {
       cursor: pointer;
     }
-    background-color:$panelMain ;
+
+    background-color: $panelMain;
     text-align: right;
     color: white;
   }
-  .card-body{
+
+  .card-body {
     background: #f3f3f3;
     color: #31373a;
   }
-  .custom-box{
+
+  .custom-box {
     text-align: right;
     background-color: $panelMain;
     color: white;
-    p{
+
+    p {
       direction: rtl;
     }
   }
+  .header-top-currency-list {
+    color: white;
+    i {
+      margin: 0 .5rem 0 .5rem;
+      font-size: 13px;
+    }
+
+  }
+
 }
