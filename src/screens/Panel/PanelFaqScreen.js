@@ -3,10 +3,13 @@ import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import {Container} from "react-bootstrap";
 import '../../css/_faq.scss'
+import {makeFullWith,removeSection,slideEffect} from '../../components/Helper'
+
 const PanelFaqScreen = () => {
+
     return (
         <>
-            <Container className='bg-secondary faqPanel my-4 py-3 '>
+            <Container className='bg-secondary w3-animate-opacity faqPanel my-4 py-3 '>
 
                 <h4 className='text-right my-4'>سوالات متداول</h4>
 
@@ -19,10 +22,10 @@ const PanelFaqScreen = () => {
                     <div className='d-flex justify-content-between align-items-center my-3 px-1 bg-header  '>
 
                         <div className='header-top-currency-list mt-2'>
-                            <i className='fal fa-times'></i>
-                            <i className='fal fa-expand'></i>
+                            <i onClick={removeSection} className='fal fa-times'></i>
+                            <i onClick={makeFullWith} className='fal fa-expand'></i>
                             <i className='fal fa-redo'></i>
-                            <i className='fal fa-angle-down'></i>
+                            <i onClick={slideEffect} className='fal fa-angle-down'></i>
                         </div>
 
                         <h6 className='text-right text-white my-3'>اطلاعات معاملات اخیر</h6>

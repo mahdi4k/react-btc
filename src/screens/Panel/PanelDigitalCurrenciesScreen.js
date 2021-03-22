@@ -1,11 +1,13 @@
 import React from 'react';
 import {Container, Table} from "react-bootstrap";
 import '../../panel.scss'
+import {makeFullWith,removeSection,slideEffect} from '../../components/Helper'
 
 const PanelDigitalCurrenciesScreen = () => {
+
     return (
         <>
-            <Container className='bg-secondary homePanel my-4 py-3 '>
+            <Container className='bg-secondary w3-animate-opacity homePanel my-4 py-3 '>
                 <h3 className='text-right my-3'>ارزهای دیجیتال</h3>
                 <div className='digital-page-group-buttons'>
                     <button className='btn'>همه</button>
@@ -19,10 +21,10 @@ const PanelDigitalCurrenciesScreen = () => {
                 <div className='d-flex justify-content-between align-items-center bg-header  mt-4 px-3 py-3'>
 
                     <div className='header-top-currency-list'>
-                        <i className='fal fa-times'></i>
-                        <i className='fal fa-expand'></i>
+                        <i onClick={removeSection} className='fal fa-times'></i>
+                        <i onClick={makeFullWith} className='fal fa-expand'></i>
                         <i className='fal fa-redo'></i>
-                        <i className='fal fa-angle-down'></i>
+                        <i onClick={slideEffect} className='fal fa-angle-down'></i>
                     </div>
 
                     <p>مارکت ارزهای دیجیتال </p>

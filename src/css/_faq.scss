@@ -21,8 +21,10 @@ $panelSecondary: #38424C;
   }
 
   .card-body {
-    background: #f3f3f3;
-    color: #31373a;
+    background: #292d31;
+    color: #ffffff;
+    line-height: 1.6;
+    direction: rtl;
   }
 
   .custom-box {
@@ -39,6 +41,7 @@ $panelSecondary: #38424C;
     i {
       margin: 0 .5rem 0 .5rem;
       font-size: 13px;
+      cursor: pointer;
     }
 
   }

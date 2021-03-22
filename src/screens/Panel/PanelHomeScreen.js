@@ -4,106 +4,114 @@ import {Col, Container, Table, Row} from "react-bootstrap";
 import PanelAreaChart from "../../components/Charts/PanelAreaChart";
 import PanelPieChart from "../../components/Charts/PanelPieChart";
 import ListGroup from "react-bootstrap/ListGroup";
+import {makeFullWith,removeSection,slideEffect} from '../../components/Helper'
 
 const PanelHomeScreen = () => {
 
+
+
+
     return (
-        <Container className='bg-secondary homePanel my-4 py-3 '>
+        <Container className='bg-secondary w3-animate-opacity homePanel my-4 py-3 '>
             <h3 className='text-right my-3'>پنل کاربری</h3>
-            <div className='d-flex justify-content-between align-items-center bg-header  mt-4 px-3 py-3'>
+            <div>
+                <div className='d-flex justify-content-between align-items-center bg-header  mt-4 px-3 py-3'>
 
-                <div className='header-top-currency-list'>
-                    <i className='fal fa-times'></i>
-                    <i className='fal fa-expand'></i>
-                    <i className='fal fa-redo'></i>
-                    <i className='fal fa-angle-down'></i>
+                    <div className='header-top-currency-list'>
+                        <i onClick={removeSection} className='fal fa-times'></i>
+                        <i onClick={makeFullWith} className='fal fa-expand'></i>
+                        <i className='fal fa-redo'></i>
+                        <i onClick={slideEffect} className='fal fa-angle-down'></i>
+                    </div>
+
+                    <p>لیست ارزهای دیجیتال </p>
                 </div>
+                <Table responsive variant="dark overflow-hidden header-top-currency-list-table">
+                    <thead>
+                    <tr>
 
-                <p>لیست ارزهای دیجیتال </p>
+                        <th>وضعیت</th>
+                        <th>حداکثر قیمت</th>
+                        <th>حجم معامله</th>
+                        <th>حداقل قیمت</th>
+                        <th>آخرین قیمت</th>
+                        <th>نام ارز</th>
+                        <th>نماد</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+
+                        <td>
+                            <PanelAreaChart/>
+                        </td>
+
+
+                        <td>8.7...421</td>
+                        <td>12,000,000</td>
+                        <td>8,700,421</td>
+                        <td>20.50% <i className='fal fa-angle-up'></i></td>
+                        <td>BitCoin</td>
+                        <td><i className="cf cf-btc text-warning"></i></td>
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <PanelAreaChart/>
+                        </td>
+
+                        <td>8.7...421</td>
+                        <td>12,000,000</td>
+                        <td>8,700,421</td>
+                        <td>20.50% <i className='fal fa-angle-up'></i></td>
+                        <td>Ethereum</td>
+                        <td><i className="cf cf-eth text-primary"></i></td>
+                    </tr>
+
+                    </tbody>
+                </Table>
             </div>
-            <Table responsive variant="dark overflow-hidden header-top-currency-list-table">
-                <thead>
-                <tr>
-
-                    <th>وضعیت</th>
-                    <th>حداکثر قیمت</th>
-                    <th>حجم معامله</th>
-                    <th>حداقل قیمت</th>
-                    <th>آخرین قیمت</th>
-                    <th>نام ارز</th>
-                    <th>نماد</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-
-                    <td>
-                        <PanelAreaChart/>
-                    </td>
-
-
-                    <td>8.7...421</td>
-                    <td>12,000,000</td>
-                    <td>8,700,421</td>
-                    <td>20.50% <i className='fal fa-angle-up'></i></td>
-                    <td>BitCoin</td>
-                    <td><i className="cf cf-btc text-warning"></i></td>
-                </tr>
-
-                <tr>
-
-                    <td>
-                        <PanelAreaChart/>
-                    </td>
-
-                    <td>8.7...421</td>
-                    <td>12,000,000</td>
-                    <td>8,700,421</td>
-                    <td>20.50% <i className='fal fa-angle-up'></i></td>
-                    <td>Ethereum</td>
-                    <td><i className="cf cf-eth text-primary"></i></td>
-                </tr>
-
-                </tbody>
-            </Table>
             <Row>
 
                 <Col md={6}>
-                    <div className='d-flex justify-content-between align-items-center bg-header  mt-4 px-3 '>
+                    <div>
+                        <div className='d-flex justify-content-between align-items-center bg-header  mt-4 px-3 '>
 
-                        <div className='header-top-currency-list mt-2'>
-                            <i className='fal fa-times'></i>
-                            <i className='fal fa-expand'></i>
-                            <i className='fal fa-redo'></i>
-                            <i className='fal fa-angle-down'></i>
+                            <div className='header-top-currency-list mt-2'>
+                                <i onClick={removeSection} className='fal fa-times'></i>
+                                <i onClick={makeFullWith} className='fal fa-expand'></i>
+                                <i className='fal fa-redo'></i>
+                                <i onClick={slideEffect} className='fal fa-angle-down'></i>
+                            </div>
+
+                            <h6 className='text-right my-3'>اطلاعات معاملات اخیر</h6>
                         </div>
+                        <Table responsive variant="dark overflow-hidden header-top-currency-list-table">
+                            <thead>
+                            <tr>
 
-                        <h6 className='text-right my-3'>اطلاعات معاملات اخیر</h6>
+                                <th>کارمزد</th>
+                                <th>مبلغ کلیه</th>
+                                <th>حجم</th>
+                                <th>قیمت</th>
+                                <th>نوع</th>
+                                <th>بازار</th>
+                                <th>زمان</th>
+                                <th>#</th>
+                            </tr>
+                            </thead>
+                        </Table>
                     </div>
-                    <Table responsive variant="dark overflow-hidden header-top-currency-list-table">
-                        <thead>
-                        <tr>
-
-                            <th>کارمزد</th>
-                            <th>مبلغ کلیه</th>
-                            <th>حجم</th>
-                            <th>قیمت</th>
-                            <th>نوع</th>
-                            <th>بازار</th>
-                            <th>زمان</th>
-                            <th>#</th>
-                        </tr>
-                        </thead>
-                    </Table>
                 </Col>
                 <Col md={6}>
                     <div className='d-flex justify-content-between align-items-center bg-header  mt-4 px-3 '>
 
                         <div className='header-top-currency-list mt-2'>
-                            <i className='fal fa-times'></i>
-                            <i className='fal fa-expand'></i>
+                            <i onClick={removeSection} className='fal fa-times'></i>
+                            <i onClick={makeFullWith} className='fal fa-expand'></i>
                             <i className='fal fa-redo'></i>
-                            <i className='fal fa-angle-down'></i>
+                            <i onClick={slideEffect} className='fal fa-angle-down'></i>
                         </div>
 
                         <h6 className='text-right my-3'>کیف پول من</h6>
@@ -136,10 +144,10 @@ const PanelHomeScreen = () => {
                     <div className='d-flex justify-content-between align-items-center bg-header  mt-4 px-3 '>
 
                         <div className='header-top-currency-list mt-2'>
-                            <i className='fal fa-times'></i>
-                            <i className='fal fa-expand'></i>
+                            <i onClick={removeSection} className='fal fa-times'></i>
+                            <i onClick={makeFullWith} className='fal fa-expand'></i>
                             <i className='fal fa-redo'></i>
-                            <i className='fal fa-angle-down'></i>
+                            <i onClick={slideEffect} className='fal fa-angle-down'></i>
                         </div>
 
                         <h6 className='text-right my-3'>وضعیت حساب کاربری</h6>
@@ -164,10 +172,10 @@ const PanelHomeScreen = () => {
                     <div className='d-flex justify-content-between align-items-center bg-header  mt-4 px-3 '>
 
                         <div className='header-top-currency-list mt-2'>
-                            <i className='fal fa-times'></i>
-                            <i className='fal fa-expand'></i>
+                            <i onClick={removeSection} className='fal fa-times'></i>
+                            <i onClick={makeFullWith} className='fal fa-expand'></i>
                             <i className='fal fa-redo'></i>
-                            <i className='fal fa-angle-down'></i>
+                            <i onClick={slideEffect} className='fal fa-angle-down'></i>
                         </div>
 
                         <h6 className='text-right my-3'>سفارشات باز</h6>

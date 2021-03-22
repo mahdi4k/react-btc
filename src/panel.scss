@@ -2,13 +2,50 @@
 
 $panelMain: #343A40;
 $panelSecondary: #38424C;
+.dir-rtl {
+  direction: rtl;
+}
+
+.fullSection {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: 9999 !important;
+  width: 100% !important;
+  height: 100% !important;
+  transition: all .5s !important;
+  background: #00000094 !important;
+}
+
+.slideUp {
+  height: 0;
+  visibility: hidden;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.btn:hover {
+  color: #dad6d6 !important;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 0 !important;
+}
+
+.navbar {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
 .homePanel {
   .bg-header {
     background-color: $panelSecondary;
-  }
-
-  .dir-rtl {
-    direction: rtl;
   }
 
   p {
@@ -19,6 +56,8 @@ $panelSecondary: #38424C;
   color: white;
 
   .header-top-currency-list {
+    cursor: pointer;
+
     i {
       margin: 0 .5rem 0 .5rem;
       font-size: 13px;
@@ -71,22 +110,721 @@ $panelSecondary: #38424C;
   text-align: right;
 
   button {
-    background: #E0A800;
+    background: #344163;
     margin-left: 20px;
     border-radius: unset;
     padding-left: 20px;
     padding-right: 20px;
-    color: black;
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
 }
 
 td.digital-page-group-buttons button {
-  background: #E0A800;
+  background: #344163;
   border-radius: unset;
   padding-left: 20px;
   padding-right: 20px;
-  color: black;
+  color: #ffffff;
   margin-left: unset;
   width: 80%;
+
+}
+
+//--------reffrals page style ---------
+.reffrals {
+  .eye-bg {
+    margin-bottom: 0 !important;
+    height: 90px;
+    margin-bottom: 0;
+    background: #4996b5;
+    color: white;
+    font-size: 32pt;
+    border-radius: 7px 7px 0 0;
+  }
+
+  .sub-border-left {
+    border: 1px solid #6f6969;
+    border-top: 0;
+    border-right: 0;
+    font-size: 17pt;
+    border-bottom-left-radius: 7px;
+  }
+
+  .sub-border-right {
+    border: 1px solid #6f6969;
+    border-top: 0;
+    border-left: 0;
+    font-size: 17pt;
+    border-bottom-right-radius: 7px
+  }
+
+  .card-title {
+    font-size: 17px !important;
+    color: white;
+    text-align: right;
+  }
+
+  .card {
+    border: unset;
+  }
+
+  .card-body {
+    background-color: #343A40 !important;
+    color: white;
+    text-align: right;
+  }
+
+  .card-header {
+    background: #38424C !important;
+    text-align: right;
+    color: white;
+  }
+
+  button {
+    background-color: #344163;
+    color: #ffffff;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 2px;
+  }
+
+  .invite-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .header-top-currency-list i {
+    margin-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .table {
+    text-align: center;
+  }
+
+  .bg-header {
+    background-color: #38424C;
+  }
+
+  .bg-header p {
+    margin-bottom: 0;
+    color: white;
+  }
+
+  .bg-header i {
+    color: white;
+  }
+
+  .form-control {
+    color: #f8fcff;
+    background-color: #2c3135;
+    background-clip: padding-box;
+    border: 1px solid #4d5863;
+    height: 50px !important;
+  }
+
+  .input-group-text {
+    background-color: #2c3135;
+    border: 1px solid #4d5863;
+    color: white;
+  }
+
+  .form-control:focus {
+    background-color: unset !important;
+    color: white !important;
+  }
+}
+
+.userProfile {
+  .card-header {
+    background: #38424C !important;
+    text-align: right;
+    color: white;
+  }
+
+  .card {
+    border: unset;
+  }
+
+  .header-top-currency-list i {
+    margin-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .card-body {
+    background-color: #343A40 !important;
+    color: white;
+    text-align: right;
+  }
+
+  .custom-yellow-button {
+    background-color: #344163;
+    color: #ffffff;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 2px;
+  }
+
+  .user-level {
+    font-size: 16px;
+  }
+}
+
+.userPayment {
+
+  .userPaymentBg {
+    background-color: $panelSecondary;
+
+    p {
+      color: white;
+    }
+
+    .payment-box {
+      background-color: #1e2841;
+      box-shadow: 1px 1px 6px #2f2c2c82;
+      min-width: 265px;
+      @media (max-width: 550px) {
+        width: 100%;
+      }
+
+      i {
+        font-size: 33pt;
+        color: green;
+      }
+
+      h2 {
+        font-size: 18pt;
+        margin-right: 6px;
+        color: white;
+      }
+
+      h6 {
+        color: #b7b7b7;
+        font-size: 12px;
+      }
+
+    }
+
+    .progress {
+      height: .5rem;
+      direction: rtl;
+    }
+
+
+  }
+
+}
+
+.paymentForm {
+  label {
+    float: right;
+  }
+
+}
+
+.userInvoice {
+  .border-dash {
+    border-bottom: 1px dashed #ccc;
+    width: fit-content;
+    padding-bottom: 7px;
+  }
+
+  table {
+    tr {
+      th {
+        font-size: 13px;
+      }
+
+      th, td {
+        text-align: center;
+        vertical-align: middle;
+
+        i {
+          font-size: 18pt;
+        }
+      }
+    }
+  }
+
+}
+
+.mailBox {
+  .mailBox-btn {
+    background: #1e2841;
+    color: white;
+  }
+
+  #bg-nested-dropdown {
+    background-color: #343A40;
+    color: white;
+    border: 1px solid #343A40;
+  }
+
+  .btn-light {
+    background-color: $panelMain;
+    color: white;
+    border: 1px solid $panelMain;
+    border-radius: 0;
+    position: relative;
+    left: 1px;
+
+    &:hover {
+      background-color: $panelSecondary !important;
+      border: 1px solid $panelSecondary;
+      color: white !important;
+    }
+  }
+
+  .list-group-item {
+    background-color: transparent;
+    text-align: right;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  i {
+    margin-left: 6px;
+  }
+
+  .listActive {
+    color: #ffffff;
+    background-color: #f5f6fa54;
+    border-radius: 5px !important;
+  }
+
+  .list-group-item {
+    transition: all .3s;
+    cursor: pointer;
+  }
+
+  .list-group-item:hover {
+    color: #ffffff;
+    background-color: #f5f6fa54;
+    border-radius: 4px !important;
+  }
+
+  .wrapperClassName {
+    background-color: white;
+    padding: 5px;
+    direction: ltr;
+    border-radius: 5px;
+  }
+
+  .form-control {
+    color: #f8fcff;
+    background-color: #2c3135;
+    background-clip: padding-box;
+    border: 1px solid #4d5863;
+    height: 45px !important;
+
+  }
+
+  .form-control::placeholder {
+    color: white;
+    opacity: 1;
+  }
+
+  .rdw-editor-main {
+    min-height: 125px;
+  }
+}
+
+.Activity {
+  .bg-header {
+    background-color: $panelSecondary;
+    color: white;
+  }
+
+  .header-top-currency-list {
+    i {
+      margin: 0 .5rem 0 .5rem;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  }
+
+  .data-table-extensions-filter {
+    background-color: $panelSecondary;
+    display: flex;
+    padding-top: 6px;
+    padding-right: 13px;
+    padding-bottom: 11px;
+    direction: rtl;
+
+    input {
+      background-color: #2f373e;
+      border: 1px solid #6c757d;
+      border-radius: 6px;
+      padding: 5px;
+      color: white;
+    }
+
+    input::placeholder {
+      color: rgba(201, 201, 201, 0.69);
+      opacity: 1;
+    }
+
+    .rdt_Pagination {
+      button {
+        color: white;
+      }
+    }
+
+  }
+
+  .gaMRwo {
+    display: none;
+  }
+
+}
+
+.mailBoxMessage {
+  .btn-group {
+    direction: ltr;
+
+    i {
+      margin-left: 0;
+    }
+
+    #bg-nested-dropdown {
+      background-color: $panelMain;
+      color: white;
+      border: 1px solid $panelMain;
+
+      &:hover {
+        background-color: $panelSecondary !important;
+        border: 1px solid $panelSecondary;
+        color: white !important;
+      }
+    }
+
+    .btn-light {
+      background-color: $panelMain;
+      color: white;
+      border: 1px solid $panelMain;
+      border-radius: 0;
+      position: relative;
+      left: 1px;
+
+      &:hover {
+        background-color: $panelSecondary !important;
+        border: 1px solid $panelSecondary;
+        color: white !important;
+      }
+    }
+  }
+
+  .leftSide {
+    background-color: $panelSecondary;
+
+    .wd-40 {
+      width: 40px;
+    }
+
+    .toolbar-text {
+      p {
+        margin-bottom: 10px !important;
+        font-size: 16px;
+      }
+    }
+
+    .attach {
+      color: white;
+    }
+
+    .mail-file-img {
+      width: 100px;
+    }
+
+    .list-inline-item a {
+      &:hover {
+        color: white;
+      }
+    }
+
+    .card-icon-primary {
+      background: #1e284187;
+      padding: 7px;
+    }
+  }
+
+  .w-95 {
+    width: 95%;
+  }
+
+  .border-gray {
+    border-color: $panelMain !important;
+  }
+
+}
+
+.mailBoxList {
+
+  td {
+    font-size: 15px;
+    text-align: right;
+    vertical-align: middle !important;
+    @media (max-width: 550px) {
+      white-space: nowrap;
+    }
+
+    i {
+      margin-left: 0;
+    }
+  }
+
+  tr.active {
+    background-color: $panelSecondary;
+  }
+
+  .custom-control-input {
+    right: 5px;
+    top: 3px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+
+  .no-space {
+    white-space: nowrap;
+  }
+
+
+}
+
+.verifyScreen {
+  .bg-header {
+    background-color: $panelSecondary;
+  }
+
+  .header-top-currency-list {
+    i {
+      margin: 0 .5rem 0 .5rem;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  }
+
+  .verifyStep {
+    direction: rtl;
+    display: flex;
+    background-color: #343A40;
+
+    .step {
+      background: #41568c;
+      color: white;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 35px 23px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border-radius: 7px;
+      width: 18%;
+
+      .circle-verify {
+        border-radius: 50%;
+        border: 1px solid;
+        width: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media (max-width: 550px) {
+        padding: 16px 15px 22px;
+        .text-verify {
+          display: none;
+        }
+      }
+    }
+
+
+    .step.active {
+      background: #1e2841;
+    }
+
+  }
+
+  .steps {
+    background-color: #343A40;
+
+    .StepOne {
+      background-color: #2a2f33;
+
+      .form-control {
+        color: #f8fcff;
+        background-color: #2c3135;
+        background-clip: padding-box;
+        border: 1px solid #4d5863;
+        height: 45px !important;
+        border-left: 0;
+        border-radius: 0;
+      }
+
+      .form-control::placeholder {
+        color: white;
+        opacity: 1;
+      }
+
+      #phoneSubmit {
+        background-color: #0b2e13;
+        color: white;
+        border: 1px solid #4d5863;
+      }
+
+    }
+  }
+
+  .stepTwo {
+    background-color: #2a2f33;
+
+    .custom-file-input {
+      cursor: pointer;
+    }
+
+    .custom-file-label {
+      color: #f8fcff;
+      background-color: #2c3135;
+      border: 1px solid #4d5863;
+      cursor: pointer;
+
+      &::after {
+        content: unset !important;
+      }
+    }
+
+    #fileUpload {
+      background-color: #1e2841;
+      color: white;
+      border: 1px solid #4d5863;
+    }
+  }
+
+  .stepThree {
+    background-color: #2a2f33;
+
+    form {
+      p {
+        white-space: nowrap;
+        display: block;
+        margin: 10px 10px 0;
+      }
+    }
+
+    .input-group-text {
+      background: #1e2841;
+      border-color: #565c61;
+      color: white;
+    }
+
+    .form-control {
+      color: #f8fcff;
+      background-color: #2c3135;
+      background-clip: padding-box;
+      border: 1px solid #4d5863;
+      height: 45px !important;
+      border-left: 0;
+      border-radius: 0;
+    }
+  }
+
+  .stepFour {
+    background-color: #2a2f33;
+
+    .form-control {
+      color: #f8fcff;
+      background-color: #2c3135;
+      background-clip: padding-box;
+      border: 1px solid #4d5863;
+      height: 45px !important;
+
+      border-radius: 0;
+    }
+
+    .form-control::placeholder {
+      color: white;
+      opacity: 1;
+      font-size: 13px;
+    }
+
+    .textaria {
+      height: 100px !important;
+    }
+  }
+
+}
+
+.AuthScreen {
+  .bg-header {
+    background-color: $panelSecondary;
+    color: white;
+  }
+
+  .notif-setting {
+    background-color: $panelMain;
+    color: white;
+  }
+
+  .authTitle {
+    background-color: $panelMain;
+
+    p {
+      line-height: 22px;
+      font-size: 14px;
+      direction: rtl;
+      color: white;
+      margin-top: 20px;
+    }
+  }
+
+  .authBox {
+    background-color: $panelSecondary;
+    min-width: 206px;
+
+    p {
+      color: white;
+    }
+
+    i {
+      font-size: 25pt;
+    }
+  }
+
+  .card-title {
+    font-size: 17px !important;
+    color: white;
+    text-align: right;
+  }
+
+  .card {
+    border: unset;
+  }
+
+  .card-body {
+    background-color: #343A40 !important;
+    color: white;
+    text-align: right;
+  }
+
+  .card-header {
+    background: #38424C !important;
+    text-align: right;
+    color: white;
+  }
+
+  .header-top-currency-list {
+    cursor: pointer;
+
+    i {
+      margin: 0 .5rem 0 .5rem;
+      font-size: 13px;
+    }
+  }
+
 }
