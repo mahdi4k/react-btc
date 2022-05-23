@@ -15,8 +15,8 @@ const Header = () => {
                 <ButtonGroup className='btn-sun-moon'>
                     <Button className='d-flex align-items-center btn-sunMoon-active' variant="outline-light"><i
                         className="fas fa-moon"> </i></Button>
-                    <Button className='d-flex align-items-center ' variant="outline-light"><i
-                        className="fas fa-sun"> </i></Button>
+                    {/* <Button className='d-flex align-items-center ' variant="outline-light"><i
+                        className="fas fa-sun"> </i></Button> */}
                 </ButtonGroup>
                 <Container className='justify-content-end mr-0 sm-container-width' fluid>
 
